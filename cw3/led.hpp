@@ -5,7 +5,7 @@ class Led
 {
 	public:
 		void On(unsigned char);
-		Led();
-	
+		void Init(void);
+
 };
 #endif

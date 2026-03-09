@@ -15,6 +15,8 @@ void Delay(int iTimeInMs){
 int main(void)
 {
 	
+	MyLed.Init();
+
 	while(1){
 		Delay(100);
 		MyStepper.StepLeft();

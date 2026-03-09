@@ -412,6 +412,11 @@
               <FileType>8</FileType>
               <FilePath>.\led.cpp</FilePath>
             </File>
+            <File>
+              <FileName>stepper.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\stepper.cpp</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
