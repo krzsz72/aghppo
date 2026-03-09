@@ -6,8 +6,6 @@
 #define LED2_bm (1<<18)
 #define LED3_bm (1<<19)
 
-enum Step{LEFT,RIGHT};
-
 void Led::Init(void)
 {
 	IO1DIR = IO1DIR | LED0_bm | LED1_bm | LED2_bm | LED3_bm;
@@ -36,24 +34,3 @@ void Led::On(unsigned char ucLedIndex)
 	}
 }	
 
-void Led::Step(enum Step eStep){
-	if(eStep == LEFT){
-		ucLedCtr--;
-	}
-	else if(eStep == RIGHT){
-		ucLedCtr++;
-	}else{
-	}
-		ucLedCtr = ucLedCtr % 4;
-		On(ucLedCtr);
-}
-
-void Led::StepLeft(void){
-	Step(LEFT);
-}
-
-// ten komentarz jest zbedny i nalezy go usunac
-
-void Led::StepRight(void){
-	Step(RIGHT);
-}
