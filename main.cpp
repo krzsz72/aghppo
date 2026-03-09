@@ -1,4 +1,4 @@
-#include "led.h"
+#include "led.hpp"
 
 void Delay(int iTimeInMs){
 	int iCycle;
@@ -9,10 +9,11 @@ void Delay(int iTimeInMs){
 
 int main(void)
 {
-	LedInit();
+	Led MyLed;
+	MyLed.Init();
 
 	while(1){
 		Delay(100);
-		LedStepLeft();
+		MyLed.StepLeft();
 	}
 }
