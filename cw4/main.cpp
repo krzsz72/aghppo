@@ -1,6 +1,9 @@
+#include "led.hpp"
 #include "stepper.hpp"
 
-Stepper MyStepper;
+
+	Led MyLed;
+	Stepper MyStepper;
 	
 void Delay(int iTimeInMs){
 	int iCycle;
