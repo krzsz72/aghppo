@@ -2,12 +2,7 @@
 
 enum Step{LEFT,RIGHT};
 
-Stepper::Stepper(unsigned char ucLedSet){
-		ucLedCtr=ucLedSet;
-		On(ucLedCtr);
-}
-	
-	
+
 void Stepper::Step(enum Step eStep){
 	if(eStep == LEFT){
 		ucLedCtr--;

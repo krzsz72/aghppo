@@ -6,7 +6,6 @@
 class Stepper : private Led
 {
 	public:
-		Stepper(unsigned char=0);
 		void StepRight(void);
 		void StepLeft(void);
 
