@@ -11,13 +11,8 @@ void Delay(int iTimeInMs){
 Keyboard MyKeyboard;
 Stepper MyStepper;
 
-unsigned char ucInversion;
-
 int main(void)
 {
-// if(MyKeyboard.eRead()==BUTTON_4){ucInversion = 1;}
-//	else{ucInversion=0;};
-	ucInversion = (MyKeyboard.eRead()==BUTTON_4) ? 1 : 0;
 	
 	while(1){
 		Delay(500);

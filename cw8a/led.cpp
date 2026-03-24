@@ -6,8 +6,6 @@
 #define LED2_bm (1<<18)
 #define LED3_bm (1<<19)
 
-extern unsigned char ucInversion;
-
 Led::Led(){
 	IO1DIR = IO1DIR | LED0_bm | LED1_bm | LED2_bm | LED3_bm;
 	IO1SET = LED0_bm;
@@ -20,23 +18,19 @@ void Led::On(unsigned char ucLedIndex)
 	switch(ucLedIndex){
 		case 0:
 			IO1SET = LED0_bm;
-			break;
+		break;
 		case 1:
 			IO1SET = LED1_bm; 
-			break;
+		break;
 		case 2:
 			IO1SET = LED2_bm; 
-			break;
+		break;
 		case 3:
 			IO1SET = LED3_bm; 
-			break;
+		break;
 		default:
-			break;		
+		break;		
 	}
-	if(ucInversion){
-		IO1SET = (~IO1SET & (0xF<<16));
-		}else{};
-	//IO1SET = (ucInversion) ? ~IO1SET : IO1SET;
-
+	//logika negacji 8b
 }	
 
