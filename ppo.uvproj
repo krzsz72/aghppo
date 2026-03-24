@@ -417,6 +417,11 @@
               <FileType>8</FileType>
               <FilePath>.\stepper.cpp</FilePath>
             </File>
+            <File>
+              <FileName>ledInv.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\ledInv.cpp</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

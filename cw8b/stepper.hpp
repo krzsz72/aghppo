@@ -1,11 +1,12 @@
 #ifndef STEPPER_H
 #define STEPPER_H
 
-#include "ledInv.hpp"
+#include "led.hpp"
 
-class Stepper
+class Stepper //: private Led
 {
 	public:
+		Stepper(unsigned char = 0);
 		void StepRight(void);
 		void StepLeft(void);
 
@@ -13,7 +14,6 @@ class Stepper
 		unsigned char ucLedCtr;
 		void Step(enum Step);
 		Led MyLed;
-		LedInv MyLedInv;
 
 };
 #endif
