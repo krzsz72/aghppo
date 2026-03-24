@@ -4,11 +4,11 @@ F (.\keyboard.cpp)(0x69C28A43)(--cpp -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=in
 I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C7FF8C)
 I (C:\Users\student\Desktop\KP240302026\aghppo\Keyboard.h)(0x69C28A43)
 F (.\main.cpp)(0x69C28A43)(--cpp -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
-I (C:\Users\student\Desktop\KP240302026\aghppo\stepper.hpp)(0x69C28A43)
+I (C:\Users\student\Desktop\KP240302026\aghppo\stepper.hpp)(0x69C28D52)
 I (C:\Users\student\Desktop\KP240302026\aghppo\led.hpp)(0x69C28A43)
 F (.\led.cpp)(0x69C28A43)(--cpp -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\led.o --omf_browse .\led.crf --depend .\led.d)
 I (C:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x51C7FF8C)
 I (C:\Users\student\Desktop\KP240302026\aghppo\led.hpp)(0x69C28A43)
 F (.\stepper.cpp)(0x69C28A43)(--cpp -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\stepper.o --omf_browse .\stepper.crf --depend .\stepper.d)
-I (C:\Users\student\Desktop\KP240302026\aghppo\stepper.hpp)(0x69C28A43)
+I (C:\Users\student\Desktop\KP240302026\aghppo\stepper.hpp)(0x69C28D52)
 I (C:\Users\student\Desktop\KP240302026\aghppo\led.hpp)(0x69C28A43)

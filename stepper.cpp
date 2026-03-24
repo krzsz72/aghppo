@@ -1,10 +1,11 @@
 #include "stepper.hpp"
 
+
 enum Step{LEFT,RIGHT};
 
 Stepper::Stepper(unsigned char ucLedSet){
 		ucLedCtr=ucLedSet;
-		On(ucLedCtr);
+		MyLed.On(ucLedCtr);
 }
 	
 	
@@ -17,7 +18,7 @@ void Stepper::Step(enum Step eStep){
 	}else{
 	}
 		ucLedCtr = ucLedCtr % 4;
-		On(ucLedCtr);
+		MyLed.On(ucLedCtr);
 }
 
 void Stepper::StepLeft(void){
