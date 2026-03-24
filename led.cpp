@@ -31,5 +31,6 @@ void Led::On(unsigned char ucLedIndex)
 		default:
 		break;		
 	}
+	//logika negacji 8b
 }	
 

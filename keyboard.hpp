@@ -8,7 +8,14 @@ enum KeyboardState{
 	BUTTON_3,
 	BUTTON_4};
 
-void KeyboardInit(void);
-enum KeyboardState eKeyboardRead(void);
+class Keyboard{
+	
+	public:
+		Keyboard();
+		enum KeyboardState eRead(void);
+
+	private:
+		
+};
 
 #endif

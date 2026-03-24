@@ -3,10 +3,7 @@
 
 enum Step{LEFT,RIGHT};
 
-Stepper::Stepper(unsigned char ucLedSet){
-		ucLedCtr=ucLedSet;
-		MyLed.On(ucLedCtr);
-}
+Stepper::Stepper(unsigned char ucLedSet){}
 	
 	
 void Stepper::Step(enum Step eStep){
