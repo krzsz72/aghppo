@@ -1,7 +1,6 @@
 #include "stepper.hpp"
 #include "keyboard.hpp"
 #include "ledInv.hpp"
-#include "ledPos.hpp"
 
 void Delay(int iTimeInMs){
 	int iCycle;
@@ -20,7 +19,7 @@ int main(void)
 	if(MyKeyboard.eRead()==BUTTON_4){
 		pLed = new LedInv;
 	}else{
-		pLed = new LedPos;
+		pLed = new Led;
 		};
 	
 	MyStepper.SetLed(pLed);

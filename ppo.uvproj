@@ -422,6 +422,11 @@
               <FileType>8</FileType>
               <FilePath>.\ledInv.cpp</FilePath>
             </File>
+            <File>
+              <FileName>ledPos.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\ledPos.cpp</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
