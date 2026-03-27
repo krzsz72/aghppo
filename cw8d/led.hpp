@@ -5,7 +5,7 @@ class Led
 {
 	public:
 		Led();
-		virtual void On(unsigned char);
+		void On(unsigned char);
 		
 	protected:
 

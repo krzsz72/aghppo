@@ -1,7 +1,6 @@
 #include "stepper.hpp"
 #include "keyboard.hpp"
-#include "ledInv.hpp"
-
+	
 void Delay(int iTimeInMs){
 	int iCycle;
 	int iNumberOfCycles = 10000 * iTimeInMs;
@@ -12,18 +11,15 @@ void Delay(int iTimeInMs){
 Keyboard MyKeyboard;
 Stepper MyStepper;
 
+
 int main(void)
 {
-	Led* pLed;
-
-	if(MyKeyboard.eRead()==BUTTON_4){
-		pLed = new LedInv;
-	}else{
-		pLed = new Led;
-		};
+	//if(MyKeyboard.eRead()==BUTTON_4){
+			MyStepper.StepMode(MyKeyboard.eRead()==BUTTON_4);
+	//}else{
+		//	ucInversion=0;};
+//	ucInversion = (MyKeyboard.eRead()==BUTTON_4) ? 1 : 0;
 	
-	MyStepper.SetLed(pLed);
-
 	while(1){
 		Delay(500);
 		

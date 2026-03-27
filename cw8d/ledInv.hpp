@@ -3,10 +3,10 @@
 
 #include "led.hpp"
 
-class LedInv : public Led{
+class LedInv : private Led{
 
 	public:
-		virtual void On(unsigned char);
+		void On(unsigned char);
 
 };
 #endif

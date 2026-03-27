@@ -1,14 +1,10 @@
 #include "stepper.hpp"
-#include "led.hpp"
+
 
 enum Step{LEFT,RIGHT};
 
 extern unsigned char ucInversion;
 	
-void Stepper::SetLed(Led* pLedToSet){
-		pLed = pLedToSet;
-};
-
 void Stepper::Step(enum Step eStep){
 	if(eStep == LEFT){
 		ucLedCtr--;
@@ -19,8 +15,11 @@ void Stepper::Step(enum Step eStep){
 		
 	ucLedCtr = ucLedCtr % 4;
 		
-	pLed->On(ucLedCtr);
-
+	if(ucInversion){
+			MyLedInv.On(ucLedCtr);
+	}else{
+			MyLed.On(ucLedCtr);
+	}
 	
 }
 
@@ -32,3 +31,6 @@ void Stepper::StepRight(void){
 	Step(RIGHT);
 }
 
+void Stepper::StepMode(unsigned char ucLedMode){
+		ucInversion=ucLedMode;
+};
