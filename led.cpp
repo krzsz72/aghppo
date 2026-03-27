@@ -9,7 +9,7 @@
 
 Led::Led(){
 	IO1DIR = IO1DIR | LED0_bm | LED1_bm | LED2_bm | LED3_bm;
-	IO1SET = LED0_bm; //BUG: inwersja nie dziala dpki nie klikniemy przcisku
+	IO1SET = LED0_bm;
 }	
 
 void Led::On(unsigned char ucLedIndex)
