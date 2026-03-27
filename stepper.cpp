@@ -30,3 +30,7 @@ void Stepper::StepLeft(void){
 void Stepper::StepRight(void){
 	Step(RIGHT);
 }
+
+void Stepper::StepMode(unsigned char ucLedMode){
+		ucInversion=ucLedMode;
+};
